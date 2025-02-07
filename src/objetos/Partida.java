@@ -3,9 +3,9 @@ package objetos;
 import java.util.Arrays;
 
 public class Partida {
-	String nombre;
-	Participante [] participantes ;
-	Participante ganador;
+	private String nombre;
+	private Participante [] participantes ;
+	private Participante ganador;
 	
 	
 	public Partida(String nombre, Participante[] participantes, Participante ganador) {
@@ -21,10 +21,38 @@ public class Partida {
 				+ ganador + "]";
 	}
 	
+	
+	
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public Participante[] getParticipantes() {
+		return participantes;
+	}
+
+	public void setParticipantes(Participante[] participantes) {
+		this.participantes = participantes;
+	}
+
+	public Participante getGanador() {
+		return ganador;
+	}
+
+	public void setGanador(Participante ganador) {
+		this.ganador = ganador;
+	}
+
 	float calculaJugadorMayorPunt(){
 	float mayorPuntuacion= 0;
-	participanteGanador=" ";
-	Participante [] tablaParticipante= this.participantes;
+	for (Participante p : this.participantes) {
+		if (mayorPuntuacion < )
+	}
+	
 	
 	
 	return participanteGanador;
