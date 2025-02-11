@@ -4,14 +4,16 @@ public class Vehiculo {
 	    private String dueno;
 	    private int numPuertas;
 	    private int numRuedas;
-	    private String calificacionEcologica;
 	    
-	    public Vehiculo(String dueno, int numPuertas, int numRuedas, String calificacionEcologica) {
+	    
+	    public Vehiculo(String dueno, int numPuertas, int numRuedas) {
 	        this.dueno = dueno;
 	        this.numPuertas = numPuertas;
 	        this.numRuedas = numRuedas;
-	        this.calificacionEcologica = calificacionEcologica;
+	        
 	    }
+	    
+	    
 	    public String getDueno() {
 	        return dueno;
 	    }
@@ -36,17 +38,5 @@ public class Vehiculo {
 	        this.numRuedas = numRuedas;
 	    }
 
-	    public String getCalificacionEcologica() {
-	        return calificacionEcologica;
-	    }
-
-	    public void setCalificacionEcologica(String calificacionEcologica) {
-	        this.calificacionEcologica = calificacionEcologica;
-	    }
-	    public Vehiculo() {}
-
-	    public boolean tieneLicenciaParaCircular(String ciudad) {
-	    	return true;
-	    }
-
+	   
 }

@@ -6,13 +6,15 @@ public class Camion extends Vehiculo {
     private int numEjes;
 
     
-    public Camion(String dueno, int numPuertas, int numRuedas, String calificacionEcologica, 
-    int tonelajeKilos, int numPasajeros, int numEjes) {
-    	super(dueno, numPuertas, numRuedas, calificacionEcologica);  
-    	this.numPasajeros = numPasajeros;
-    	this.numEjes = numEjes;
-    }
-    	 public int getTonelajeKilos() {
+    	public Camion(String dueno, int numPuertas, int numRuedas, int tonelajeKilos, int numPasajeros, int numEjes) {
+		super(dueno, numPuertas, numRuedas);
+		this.tonelajeKilos = tonelajeKilos;
+		this.numPasajeros = numPasajeros;
+		this.numEjes = numEjes;
+	}
+    	
+
+		public int getTonelajeKilos() {
     	        return tonelajeKilos;
     	    }
 
