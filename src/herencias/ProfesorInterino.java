@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class ProfesorInterino extends Profesor {
 	public ProfesorInterino(String nombre, String nombreDepartamento, LocalDate localDate) {
-		super(nombre, nombreDepartamento);
+		super(nombre, nombreDepartamento, sueldo);
 		// TODO Auto-generated constructor stub
 	}
 

@@ -5,7 +5,7 @@ public class Profesor extends Persona {
 
 	private String nombreDepartamento;
 	
-	private double sueldo; 
+	protected double sueldo; 
 	
 	public Profesor(String nombre) {
 		super(nombre);
@@ -28,7 +28,7 @@ public class Profesor extends Persona {
 	
 	
 
-	public double getSueldo() {
+	protected double getSueldo() {
 		return sueldo;
 	}
 
@@ -41,10 +41,7 @@ public class Profesor extends Persona {
 		return "Profesor [nombreDepartamento=" + nombreDepartamento + ", getNombre()=" + super.getNombre() + "]";
 	}
 
-	protected double getSueldo() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+
 	
 	
 	
