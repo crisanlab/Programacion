@@ -1,5 +1,7 @@
 package herencias;
 
+import herencia.Vehiculo;
+
 public class Camion1 extends Vehiculo {
 	  private int tonelajeKilos;
 	    private int numPasajeros;

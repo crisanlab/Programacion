@@ -1,4 +1,4 @@
-package herencias;
+package herencia;
 
 public class Coche extends Vehiculo {
 	private String calificacionEcologica;
