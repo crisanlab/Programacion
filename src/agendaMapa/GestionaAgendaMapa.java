@@ -1,5 +1,11 @@
 package agendaMapa;
 
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+
 public class GestionaAgendaMapa {
 public static void main(String[] args) {
 	Contacto c1 = new Contacto("Pepe","Arez","lllll","qoqoqo","12345678");
@@ -21,5 +27,26 @@ public static void main(String[] args) {
 	System.out.println(a.getAgenda().keySet());  //La clave
 	System.out.println("Devuelvo valores:");
 	System.out.println( a.getAgenda().values()); //devuelve los contactos(valores)
+	
+	
+	//iterador de mapas
+	
+	Set<Map.Entry <String,Contacto>> entradas = a.getAgenda().entrySet();
+	
+	Entry <String, Contacto> elemento;
+	Iterator it = entradas.iterator();
+	while (it.hasNext()) {
+		elemento = (Entry <String, Contacto>)it.next();
+		elemento.getKey();
+		elemento.getValue();
+		
+	}
+	
+	
+	
+	
+	
+	
+	
 }
 }
